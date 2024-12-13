@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
 
     QSqlDatabase dbconn = QSqlDatabase::addDatabase("DUCKDB");
     dbconn.setDatabaseName(databasePath);
-    dbconn.setPassword("pass");
     ///dbconn.setConnectOptions("");//TODO
     dbconn.open();
     qDebug() << "isOpen(): " << dbconn.isOpen() << "isOpenError" <<dbconn.isOpenError();
